@@ -1,8 +1,9 @@
 # Module 3 : Getting and Cleaning Data
-Course Project by RaynerNYC
+Course Project by RaynerNYC.
 
 
 ### Project Description :
+
 The purpose of this project is to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
 1) a tidy data set as described below, 
 2) a link to a Github repository with your script for performing the analysis, and 
@@ -31,14 +32,15 @@ Then source the R code:
 source("run_analysis.R")
 
 Running run_analysis.R will create 2 tidy data in tables (txt file):
-tidy_clean_data.txt
-tidy_data_with_averages.txt
+1. tidy_clean_data.txt
+2. tidy_data_with_averages.txt
 
 Run following to read the data: 
 data <- read.table("tidy_data_with_averages.txt")
 
 
 ### Explanation for run_analysis.R
+
 Step 1: Merges the training and the test sets to create one data set.
 
 Step 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
