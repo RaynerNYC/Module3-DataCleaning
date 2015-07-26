@@ -28,7 +28,7 @@ Y <- rbind(raw1, raw2)
 
 # Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
-features <- read.table("Data/features.txt")
+features <- read.table("features.txt")
 indices_of_good_features <- grep("-mean\\(\\)|-std\\(\\)", features[, 2])
 X <- X[, indices_of_good_features]
 names(X) <- features[indices_of_good_features, 2]
@@ -38,7 +38,7 @@ names(X) <- tolower(names(X))
 
 # Step 3. Uses descriptive activity names to name the activities in the data set.
 
-activities <- read.table("Data/activity_labels.txt")
+activities <- read.table("activity_labels.txt")
 activities[, 2] = gsub("_", "", tolower(as.character(activities[, 2])))
 Y[,1] = activities[Y[,1], 2]
 names(Y) <- "activity"
