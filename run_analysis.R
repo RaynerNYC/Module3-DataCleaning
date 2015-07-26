@@ -13,16 +13,16 @@
 
 # Step 1. Merges the training and the test sets to create one data set.
 
-raw1 <- read.table("Data/train/X_train.txt")
-raw2 <- read.table("Data/test/X_test.txt")
+raw1 <- read.table("train/X_train.txt")
+raw2 <- read.table("test/X_test.txt")
 X <- rbind(raw1, raw2)
 
-raw1 <- read.table("Data/train/subject_train.txt")
-raw2 <- read.table("Data/test/subject_test.txt")
+raw1 <- read.table("train/subject_train.txt")
+raw2 <- read.table("test/subject_test.txt")
 S <- rbind(raw1, raw2)
 
-raw1 <- read.table("Data/train/y_train.txt")
-raw2 <- read.table("Data/test/y_test.txt")
+raw1 <- read.table("train/y_train.txt")
+raw2 <- read.table("test/y_test.txt")
 Y <- rbind(raw1, raw2)
 
 
