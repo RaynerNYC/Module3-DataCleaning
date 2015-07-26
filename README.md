@@ -21,15 +21,13 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### Execution steps for run_analysis.R
 
-Unzip the source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into your working directory.
+Unzip the source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into a  directory, example: c:/.../project/
 
-Put run_analysis.R into your working directory
+Copy the file, run_analysis.R, into "UCI HAR Dataset" folder, example: c:/.../project/UCI HAR Dataset/
 
-Start RStudio and set your working directory : 
-setwd("your_working_directory_path") 
+Start RStudio and set your working directory, example: setwd("c:/.../project/UCI HAR Dataset/") 
 
-Then source the R code:
-source("run_analysis.R")
+Then source/load the R code: source("run_analysis.R")
 
 Running run_analysis.R will create 2 tidy data in tables (txt file):
 1. tidy_clean_data.txt
